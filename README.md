@@ -1,16 +1,39 @@
-# FINE3300-2026-A1
+# FINE 3300 Assignment 1 – Exchange Rate Calculator
 
-## FINE 3300 Assignment 1 - Exchange Rate Calculator
+## Project Description
 
-### Project Overview
+This project is a Python currency exchange calculator that converts between US dollars (USD) and Canadian dollars (CAD). It reads the exchange rate from a Bank of Canada CSV file and calculates the converted amount.
 
-This project implements a Python-based exchange rate calculator that converts amounts between Canadian dollars (CAD) and US dollars (USD). The exchange rate is read from a CSV file containing annual exchange rate data reported by the Bank of Canada.
+## Files
 
-### Project Components
+- `ExchangeRates.py` – My Part 1 implementation of the currency converter.
+- `ExchangeRatesAI.py` – The AI-generated version created with Claude for Part 2.
+- `BankOfCanadaExchangeRate.2026.csv` – The CSV file containing the exchange-rate data.
 
-- **Part 1: Exchange Rates** — A Python program that uses an `ExchangeRates` class to read exchange rate data and convert currencies.
-- **Part 2: Vibe Coding** — A separate AI-generated implementation used to compare the code and development approach with Part 1.
+## Requirements
 
-### Files
+- Python 3
+- All three files must be saved in the same project folder.
 
-The project will include the Python source files and the exchange rate CSV data file required for the assignment.
+## How to Run
+
+Open a terminal in the project folder and run either program:
+
+```bash
+python3 ExchangeRates.py
+```
+
+or
+
+```bash
+python3 ExchangeRatesAI.py
+```
+
+Enter the amount, source currency (`USD` or `CAD`), and target currency (`USD` or `CAD`) when prompted.
+
+## Test Results
+
+Using the exchange rate of 1.3978 CAD per USD from the CSV file:
+
+- 100,000 USD to CAD: `$100,000.00 USD = $139,780.00 CAD`
+- 100,000 CAD to USD: `$100,000.00 CAD = $71,540.99 USD`
